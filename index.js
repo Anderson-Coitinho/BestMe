@@ -1,5 +1,4 @@
 const questions = [   //perguntas
-    "Qual o seu nome?",
     "O que aprendi hoje?",
     "O que me deixou aborrecido? E o que poderia fazer para melhorar",
     "O que me deixou feliz hoje?",
@@ -24,22 +23,8 @@ process.stdin.on("data", data =>{
     }
 })
 
-process.on('exit', () => { //relatorio final
-    console.log(`
-    Bacana ${answers[0]}
-
-    O que você aprendeu hoje foi: 
-    ${answers[1]}
-    
-    O que te aborreceu e poderia melhorar foi: 
-    ${answers[2]}
-
-    Você ficou feliz com: 
-    ${answers[3]}
-
-    Você ajudou ${answers[4]} pessoas hoje!!
-
-    Volte amanha para novas reflexões`)
+process.on('exit', () => {
+    console.log(" Bacana  ")
 
     
 })
